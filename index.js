@@ -6,7 +6,6 @@ import {config} from 'dotenv';
 import mongoose from 'mongoose';
 //connect mongodb by mongoose
 // mongoose.connect('mongodb://0.0.0.0:27017/toDoListDB');
-// mongoose.connect('mongodb+srv://Palash_admin:admin%40Palash@cluster01.7jqwtim.mongodb.net/todoListDB');
 mongoose.connect(process.env.MONGO_URI);
 
 const listSchema = new mongoose.Schema({
