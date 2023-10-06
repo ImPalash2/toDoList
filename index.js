@@ -1,7 +1,7 @@
 import express from 'express';
 import bodyParser from 'body-parser';
-import {config} from 'dotenv';
-
+import dotenv from 'dotenv';
+dotenv.config();
 // Database part
 import mongoose from 'mongoose';
 //connect mongodb by mongoose
