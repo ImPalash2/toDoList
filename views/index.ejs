@@ -1,0 +1,35 @@
+<%- include('./header.ejs') %>
+<center>
+<main>
+    <div id="myDIV" class="header">
+      <h2><%=mode%></h2>
+    </div>
+
+    <div id="myUL">
+      <ul>
+        <% bal.forEach((ele)=> { %>
+          <li class="item">
+            <form action="/delet" method="post">
+              <input type="checkbox" class="checkbox" name="checkbox" value="<%=ele._id%>" onchange="this.form.submit()">
+              <%= ele.name %>
+              <input type="hidden" name="listName" value="<%=mode%>"></input>
+              <!-- <input type="submit" value="&#215;" class="close"> -->
+            </form>
+          </li>
+          <% }); %>
+      </ul>
+      
+      <div class="newItem">
+        <form action="/submit" method="post">
+          <input type="text" id="myInput" name="newData" placeholder="New Item" autocomplete="off">
+          <div class="ch">
+            <button type="submit"  class="addBtn" name="listName" value="<%=mode%>">+</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    
+</main>
+</center>
+
+<%- include('./footer.ejs') %>

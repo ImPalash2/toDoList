@@ -1,0 +1,138 @@
+/* Include the padding and border in an element's total width and height */
+/* Remove margins and padding from the every element */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html{
+  background-color: #e4e9fd;
+  background-image: -webkit-linear-gradient(69deg, #a683e3 50%, #e4e9fd 50%);
+  min-height: 100%;
+}
+nav ul{
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+}
+nav ul li{
+  list-style-type: none;
+  padding-right: 30px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #9a74da;
+}
+
+main{
+  width: 30%;
+  align-items: center;
+  padding: 20px 0;
+}
+
+#myDIV{
+  background-color: #a683e3;  
+  padding: 10px 0;
+  border-radius: 30px;
+  margin-bottom: 30px;
+}
+#myDIV h2{
+  font-size: 1.9rem;
+  color: aliceblue;
+}
+#myUL{
+  border: 1px solid rgb(229, 224, 224);
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgb(231, 229, 223);
+}
+#myUL ul li{
+  list-style-type: none;
+  padding: 16px;
+  width: 100%;
+  
+  border-bottom: 1px solid rgb(232, 230, 230);
+  font-size: 1.2rem;
+  color: rgb(33, 30, 26);
+  font-family: 'Roboto', sans-serif;
+}
+#myUL ul li:nth-child(1){
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+#myUL ul li:nth-child(odd) {
+  background-color: aliceblue;
+}
+#myUL ul li:nth-child(even) {
+  background-color: rgb(222, 232, 232);
+}
+.newItem{
+  position: relative;
+}
+#myInput{
+  width: 100%;
+  padding: 18px 10px;
+  border: none;
+  font-size: 1.1rem;
+}
+#myInput::placeholder{
+  text-align: center;
+  font-size: 1rem;
+  color: rgb(176, 171, 171);
+}
+textarea:focus,
+input:focus {
+  outline: none;
+  border-radius: 4px;
+  background-color: #f9e8ff;
+}
+.ch{
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+.addBtn{
+  background-color: #a683e3;
+  color: white;
+  font-size: 1.9rem;
+  padding: 3px 15px;
+  border-radius: 50%;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+.item{
+  position: relative;
+  
+}
+.checkbox{
+  position: absolute;
+  left: 15px;
+  bottom: 21px;
+  opacity: .4;
+}
+.checkbox:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+:checked{
+  opacity: 1;
+}
+.close{
+  position: absolute;
+  right: 5px;
+  padding: 4px 13px;
+  opacity: .4;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  bottom: 5px;
+}
+.close:hover{
+  opacity: 1;
+  background-color: rgb(220, 218, 218);
+  cursor: pointer;
+}
